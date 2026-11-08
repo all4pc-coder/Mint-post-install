@@ -2,4 +2,4 @@
 
 Linux Mint post-install tweaks
 
-It is just the beginning.
+It is just a simple Linux Mint post-installation script to automate some tweaks.
