@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Convert Image to WebP
+Comment=Convert selected PNG/JPG image to WebP and show alert
+Exec=bash -c 'if convert "$1" "$1.webp"; then notify-send "Image Conversion Complete" "Saved: $1.webp"; else notify-send -u critical "Image Conversion Failed" "Could not convert $1"; fi' _ %F
+Icon-Name=image-x-generic
+Selection=s
+Extensions=png;jpg;jpeg;
+Quote=none

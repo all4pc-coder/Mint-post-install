@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Compress PDF Document
+Comment=Compress selected PDF file using Ghostscript and show alert
+Exec=bash -c 'if gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile="$1.compressed.pdf" "$1"; then notify-send "PDF Compression Complete" "Saved: $1.compressed.pdf"; else notify-send -u critical "PDF Compression Failed" "Could not compress $1"; fi' _ %F
+Icon-Name=application-pdf
+Selection=s
+Extensions=pdf;
+Quote=none

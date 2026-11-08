@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Open Folder in VS Code
+Comment=Open selected folder in Visual Studio Code
+Exec=bash -c 'if command -v code &>/dev/null; then code "$1"; elif command -v codium &>/dev/null; then codium "$1"; else notify-send "VS Code Not Found" "Please install Visual Studio Code (.deb)"; fi' _ %P
+Icon-Name=com.visualstudio.code
+Selection=any
+Extensions=dir;
+Quote=none
