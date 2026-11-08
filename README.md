@@ -1,5 +1,5 @@
 # Mint-post-install
 
-Linux Mint post-install tweaks
+Linux Mint 22.3 post-install tweaks
 
-It is just a simple Linux Mint post-installation script to automate some tweaks.
+It is just a simple Linux Mint 22.3 post-installation script to automate some tweaks.
