@@ -36,3 +36,14 @@
 | **Issues** | `gh issue create` | Opens an interactive prompt to create a new issue from terminal. |
 | **PRs** | `gh pr create` | Creates a Pull Request from your current branch to `main`. |
 | **PRs** | `gh pr status` | Shows the status of any Pull Requests you created or need to review. |
+
+## Version Tagging & GitHub Releases
+
+| Goal | Command |
+| :--- | :--- |
+| List all existing tags | `git tag` |
+| Create a new version tag | `git tag -a v5.0 -m "Release v5.0"` |
+| Upload tag to GitHub | `git push origin v5.0` |
+| Create a GitHub Release | `gh release create v5.0 --generate-notes` |
+| Delete a local tag made by mistake | `git tag -d v5.0` |
+| Delete a tag already pushed to GitHub | `git push origin --delete v5.0` |
