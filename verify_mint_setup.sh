@@ -137,5 +137,5 @@ echo -e "${BLUE}================================================================
 if [[ $FAILED_CHECKS -eq 0 ]]; then
     echo -e "${GREEN}All system tweaks, utilities, and Nemo actions are active and ready!${NC}"
 else
-    echo -e "${YELLOW}Some checks require attention. Run post-installation_v4.sh to fix missing items.${NC}"
+    echo -e "${YELLOW}Some checks require attention. Run post-installation.sh to fix missing items.${NC}"
 fi
