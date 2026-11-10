@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# Linux Mint 22 (Cinnamon) Post-Installation Setup & Optimization Script (v5.0)
+# Linux Mint 22.3 (Cinnamon) Post-Installation Setup & Optimization Script
 # ==============================================================================
 set -euo pipefail
 
@@ -73,4 +73,4 @@ log "Step 7: System Cleanup..."
 apt autoremove -y
 apt clean
 
-log "Post-installation v5.0 complete!"
+log "Post-installation tweaks complete!"

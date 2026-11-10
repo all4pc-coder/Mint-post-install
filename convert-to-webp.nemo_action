@@ -5,4 +5,4 @@ Exec=bash -c 'if convert "$1" "$1.webp"; then notify-send "Image Conversion Comp
 Icon-Name=image-x-generic
 Selection=s
 Extensions=png;jpg;jpeg;
-Quote=none
+Quote=double

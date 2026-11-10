@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# Linux Mint 22 Setup & Verification Test Script (v2.1)
+# Linux Mint 22.3 (Cinnamon) Setup & Verification Test Script
 # ==============================================================================
 # Checks CLI tools, system performance settings, firewall, Nemo actions, and notifications.
 # ==============================================================================
@@ -101,6 +101,7 @@ NEMO_DIR="$TARGET_HOME/.local/share/nemo/actions"
 check_file "$NEMO_DIR/pdf-compress.nemo_action" "PDF Compress Nemo Action"
 check_file "$NEMO_DIR/convert-to-webp.nemo_action" "Convert to WebP Nemo Action"
 check_file "$NEMO_DIR/open-in-vscode.nemo_action" "Open in VS Code Nemo Action"
+check_file "$NEMO_DIR/extract-mp3.nemo_action" "Extract MP3 audio from any video file"
 
 # 4. Desktop Notification Functional Test
 echo -e "\n${YELLOW}4. Desktop Notification Functional Test${NC}"

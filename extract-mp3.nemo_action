@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Extract MP3 Audio
+Comment=Extract high-quality MP3 audio from selected video file using FFmpeg
+Exec=bash -c 'OUTFILE="${1%.*}.mp3"; if ffmpeg -i "$1" -vn -acodec libmp3lame -q:a 2 "$OUTFILE" -y; then notify-send "Audio Extraction Complete" "Saved: $OUTFILE"; else notify-send "Audio Extraction Failed" "Error processing video file with FFmpeg"; fi' _ %F
+Icon-Name=audio-x-generic
+Selection=s
+Extensions=mp4;mkv;avi;mov;webm;flv;wmv;ogv;
+Quote=double

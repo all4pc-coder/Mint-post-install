@@ -5,4 +5,4 @@ Exec=bash -c 'if gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/eb
 Icon-Name=application-pdf
 Selection=s
 Extensions=pdf;
-Quote=none
+Quote=double

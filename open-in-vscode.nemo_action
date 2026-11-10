@@ -5,4 +5,4 @@ Exec=bash -c 'if command -v code &>/dev/null; then code "$1"; elif command -v co
 Icon-Name=com.visualstudio.code
 Selection=any
 Extensions=dir;
-Quote=none
+Quote=double

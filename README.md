@@ -27,6 +27,7 @@ Run with `sudo` on a fresh Linux Mint installation to configure the system in 7 
 ### 2. Custom Nemo File Manager Actions
 Adds right-click context menu shortcuts directly inside the Nemo file manager:
 * **`convert-to-webp.nemo_action`** — Converts selected images to `.webp` format.
+* **`extract-mp3.nemo_action`** — Extracts high-quality VBR MP3 audio (`-q:a 2`) from selected video files via FFmpeg with desktop notifications. *(Run `nemo -q` to reload new actions.)*
 * **`open-in-vscode.nemo_action`** — Opens files or folders directly in Visual Studio Code.
 * **`pdf-compress.nemo_action`** — Compresses PDF files right from the file manager.
 
@@ -34,7 +35,7 @@ Adds right-click context menu shortcuts directly inside the Nemo file manager:
 A diagnostic script that audits your setup and prints a pass/fail summary across four areas:
 * **CLI & GUI Dependencies:** Verifies `gs`, `convert`, `pdfinfo`, `ffmpeg`, `xclip`, `inxi`, `pdfarranger`, `xournalpp`, `okular`, `preload`, and `notify-send`.
 * **System & Security Settings:** Confirms `vm.swappiness` equals `10`, `fstrim.timer` is enabled, and UFW is active.
-* **Nemo Actions:** Checks that all three `.nemo_action` files exist in `~/.local/share/nemo/actions/`.
+* **Nemo Actions:** Checks that all four `.nemo_action` files exist in `~/.local/share/nemo/actions/`.
 * **Desktop Notifications:** Sends a live `notify-send` test alert to verify D-Bus desktop notifications work properly.
 
 ---
