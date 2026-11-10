@@ -44,7 +44,7 @@ A diagnostic script that audits your setup and prints a pass/fail summary across
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com
+git clone https://github.com/all4pc-coder/Mint-post-install.git
 cd Mint-post-install
 ```
 
