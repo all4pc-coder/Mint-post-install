@@ -21,7 +21,7 @@ fi
 TARGET_USER="${SUDO_USER:-$USER}"
 TARGET_HOME=$(eval echo "~$TARGET_USER")
 
-log "Starting Linux Mint 22 Post-Installation Setup v5.0..."
+log "Starting Linux Mint 22.3 Post-Installation Setup..."
 info "Target User: $TARGET_USER (Home: $TARGET_HOME)"
 
 log "Step 1: Updating Package Repositories..."
